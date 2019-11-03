@@ -1,0 +1,10 @@
+<b>Basic Approval Message</b> {{ approvalText }} <br>
+<div *ngIf= "( status ===  'BasicApprovalPending')" class="container">   
+<form>
+<div class="form-group">
+<label for="approvalText">approval message</label>
+<input type="text" name="approvalText" [(ngModel)]="approvalText" class="form-control" id="approvalText" >
+</div>
+<button (click)="submit()">Approve Basic</button>
+</form>
+</div>
